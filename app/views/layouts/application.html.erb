@@ -50,6 +50,9 @@
           <a class="brand" href="#">HelpingScans</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
+              <li><%= link_to "About", "/about"  %></li>
+              <li><%= link_to "Profiles", "/profiles"  %></li>
+              <li><%= link_to "Store", "/store"  %></li>
             <% if user_signed_in? %>
               <li>
               <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
@@ -59,9 +62,6 @@
               <%= link_to('Login', new_user_session_path)  %>  
               </li>
             <% end %>
-              <li><%= link_to "Profiles", "/profiles"  %></li>
-              <li><%= link_to "Store", "/store"  %></li>
-              <li><%= link_to "About", "/about"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
