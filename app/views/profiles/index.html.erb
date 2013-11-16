@@ -1,9 +1,7 @@
-<div class="row-fluid">
-	<div class="span8">
-		<%= image_tag '#', id: 'profile_photo' %> 
-	
-	</div>
-	<div class="span4">
-
-	</div>
+<div class="row-fluid">	
+	<% @profiles.each do |profile| %>
+		<div class="span6">	
+			<%= link_to profile.email, profile_path(profile) %>
+		</div>
+	<% end %> 
 </div>

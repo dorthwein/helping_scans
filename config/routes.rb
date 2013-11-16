@@ -5,15 +5,22 @@ HelpingScans::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-
   resources :profiles do
+    member do 
+      get 'products'
+    end
   end
   
+<<<<<<< HEAD
   resources :store do
   end
+=======
+>>>>>>> 4542a9e5a77f787f2fba54d7be0c4326b6d5117d
 
   resources :about do
   end
+
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

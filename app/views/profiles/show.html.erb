@@ -1,0 +1,52 @@
+<div class="row-fluid">
+	<div class="span2">
+		<%= render '/profiles/side_bar' %>
+	</div>
+	<div class="span6">
+		<div class="row-fluid">
+			<div class="span12">
+				<h1> <%= @profile.name %> </h1>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<%= image_tag '#', id: 'profile_photo' %> 	
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<p> 
+					<%= @profile.bio %> 
+				</p>
+			</div>
+		</div>		
+	</div>
+
+
+	<div class="span4">
+		<div class="row-fluid">
+			<div class="span12">
+				<%= link_to 'Donate', '#', :class => 'btn btn-primary', style: 'width:100%; padding:10px;' %>
+			</div>
+		</div>
+
+		<% @profile.wish_list.wishes.each do |x| %>
+		<div class="row-fluid" style="padding:5px; border-top:1px solid #CCC;">
+			<div class="span8">
+				<h5 style="width:100%;"> <%= x.retail_item.name %> </h5>
+			</div>
+			<div class="span4">
+				<%= link_to 'Give This', '#', :class => 'btn btn-success' %>
+			</div>
+		</div>
+		<% end %>
+
+
+		<div class="row-fluid">
+			<div class="span12">
+				<%= link_to 'Donate', '#', :class => 'btn btn-primary', style: 'width:100%; padding:10px;' %>
+			</div>
+		</div>
+	</div>
+</div>
+
