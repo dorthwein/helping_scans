@@ -16,6 +16,9 @@ class User
   field :state, type: String
   field :country, type: String
   field :zip, type: String
+  
+  field :bio, type: String
+  field :profile_pict_url, type: String
 
   ## Recoverable
   field :reset_password_token,   :type => String
