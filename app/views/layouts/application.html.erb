@@ -16,15 +16,15 @@
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
-    <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    <%= favicon_link_tag 'hs_logo_abbr_144x144.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
 
     <!-- For iPhone with high-resolution Retina display: -->
     <!-- Size should be 114 x 114 pixels -->
-    <%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+    <%= favicon_link_tag 'hs_logo_abbr_114x114.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
 
     <!-- For first- and second-generation iPad: -->
     <!-- Size should be 72 x 72 pixels -->
-    <%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+    <%= favicon_link_tag 'ahs_logo_abbr_72x72.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
 
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <!-- Size should be 57 x 57 pixels -->
@@ -47,9 +47,16 @@
             <span class="icon-bar"></span>
             
           </a>
+<<<<<<< HEAD
           <a class="brand" href="#"><%= image_tag 'logo.png', width:'200px;' %> </a>
+=======
+          <a class="brand" href="/"><%= image_tag("helping_scans_logo.png") %></a>
+>>>>>>> e6ea6f2ee07dd5b8fd76efbfd935264199c3b4f9
           <div class="container-fluid nav-collapse">
             <ul class="nav">
+              <li><%= link_to "About", "/about"  %></li>
+              <li><%= link_to "Profiles", "/profiles"  %></li>
+              <li><%= link_to "Store", "/store"  %></li>
             <% if user_signed_in? %>
               <li>
               <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
@@ -59,9 +66,6 @@
               <%= link_to('Login', new_user_session_path)  %>  
               </li>
             <% end %>
-              <li><%= link_to "Profiles", "/profiles"  %></li>
-              <li><%= link_to "Store", "/store"  %></li>
-              <li><%= link_to "About", "/about"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
