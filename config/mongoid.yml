@@ -1,3 +1,4 @@
+# ENV['MONGOLAB_URI'] = 'mongodb://dorthwein:doomsday101@paulo.mongohq.com:10046/app19539930'
 development:
   # Configure available database sessions. (required)
   sessions:
