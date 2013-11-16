@@ -8,10 +8,6 @@ class ProfilesController < ApplicationController
   end
   def show
 
-    
-
-    
-
   	@profile = User.find(params[:id])
   end
 end
