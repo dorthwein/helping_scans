@@ -34,6 +34,13 @@ class User
   field :current_sign_in_ip, :type => String
   field :last_sign_in_ip,    :type => String
 
+  has_one :wish_list
+
+  after_create :ensure_wishlist
+  def ensure_wishlist
+    WishList.find_or_create_by(self.wishlist)
+  end
+
   ## Confirmable
   # field :confirmation_token,   :type => String
   # field :confirmed_at,         :type => Time
