@@ -9,6 +9,9 @@ HelpingScans::Application.routes.draw do
   resources :profiles do
   end
   
+  resources :store do
+  end
+
   resources :about do
   end
   # Example of regular route:
