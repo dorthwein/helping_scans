@@ -1,4 +1,32 @@
 == README
+Schema 
+entities
+	users
+		-> Profile
+			-> Name
+			-> Shipping Address
+			-> Bio
+			-> Picture
+			-> geo_location
+			-> total_cash
+
+		-> Donations						
+			-> 
+		-> Type (Admin/Beneficiaries)
+
+retail_items
+	-> item Number
+	-> picture url
+	-> price
+	-> 
+
+requests
+	-> Profile
+	-> Item
+	-> Ammount Rasied
+	-> has_many_donations
+	-> 
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

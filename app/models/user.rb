@@ -1,4 +1,3 @@
-
 class User
   include Mongoid::Document
   # Include default devise modules. Others available are:
@@ -10,6 +9,15 @@ class User
   ## Database authenticatable
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""
+
+  field :name, type: String
+  field :street, type: String
+  field :city, type: String
+  field :state, type: String
+  field :country, type: String
+  field :zip, type: String
+
+
 
   ## Recoverable
   field :reset_password_token,   :type => String
