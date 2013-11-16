@@ -18,7 +18,6 @@ class User
   field :zip, type: String
 
 
-
   ## Recoverable
   field :reset_password_token,   :type => String
   field :reset_password_sent_at, :type => Time
