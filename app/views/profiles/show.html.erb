@@ -31,11 +31,14 @@
 		</div>
 
 		<% @profile.wish_list.wishes.each do |x| %>
-			<div class="row-fluid">
-				<div class="span6">
-					<%= x.retail_item.name %>
-				</div>
+		<div class="row-fluid" style="padding:5px; border-top:1px solid #CCC;">
+			<div class="span8">
+				<h5 style="width:100%;"> <%= x.retail_item.name %> </h5>
 			</div>
+			<div class="span4">
+				<%= link_to 'Give This', '#', :class => 'btn btn-success' %>
+			</div>
+		</div>
 		<% end %>
 
 

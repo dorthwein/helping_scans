@@ -7,11 +7,10 @@ require 'csv'
 HelpingScans::Application.load_tasks
 
 task :load_app => :environment do
-	loripsum = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
 	names = ['Jim Samson', 'Tammy Orgega', 'Francis Smith']
 
 
-['Hello, my Name is First sergeant Jim Samson. When I was 18 years old, I served our country in vietnam. 
+	bios = ['Hello, when I was 18 years old, I served our country in vietnam. 
 After the conflict I had very little assets to my name and no formal education. I found a job welding boilers for ships and worked there for 20 years. I was injured and eventually my compensation stopped after the ship yard went bankrupt. I have been homeless for many years surviving by the kindness of others. Many people chose not to donate telling me I would only buy booze. I have never had an alcohol problem, but now thanks to Helping scans people will know exactly where their donations are used. Thank you for your donation, God Bless America!',
 'My name is Tammy and I have been addicted to crack since I was 14 years old. I ran away from my abusive family when I was 17. I lived at my dealers house for a while, but was arrested and went to prison for 5 years. I wanted to turn my life around but no one would hire a felon. Eventually I went back to my old ways and started using again. I am now 42 and live on the streets of st louis. Thanks to donators like you I have been seeing a substance abuse counselor and been clean for 5 months.',
 'Greetings! I am Francis. I have been homeless since I lost my wife and house from hurricane Katrina. I moved north in search of work but still struggle to live day to day. Please donate. Any amount will help and I am currently saving for a winter coat.',]
@@ -23,8 +22,8 @@ After the conflict I had very little assets to my name and no formal education. 
 		if x.wish_list.nil?
 			WishList.create(user: x)
 		end
-		x.update_attributes(
-			bio: loripsum,
+		x.update_attributes(			
+			bio: bios.sample,
 			name: names.sample,			
 		)
 
