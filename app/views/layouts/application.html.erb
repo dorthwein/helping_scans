@@ -52,6 +52,7 @@
             <ul class="nav">
               <li><%= link_to "About", "/about"  %></li>
               <li><%= link_to "Profiles", "/profiles"  %></li>
+              <li><%= link_to "Donate", donations_path  %></li>
             <% if user_signed_in? %>
               <li>
               <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
@@ -68,11 +69,11 @@
     </div>
 
 
-    <div id="background-div"></div>
+
       <div class="row-fluid" style="padding:0; position:abosolute;z-index:2;">
         <div class="span12" style="padding:0">
           <%= bootstrap_flash %>        
-            <div id="container" style="position:relative; top:50px; z-index:2">
+            <div id="container">
               <%= yield %>
             </div>     
         </div>  

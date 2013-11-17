@@ -13,6 +13,9 @@ HelpingScans::Application.routes.draw do
     end
 
   end
+  resources :donations do
+  end
+
 
   resources :abouts do 
   end
