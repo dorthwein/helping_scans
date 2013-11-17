@@ -38,7 +38,7 @@ class User
 
   after_create :ensure_wishlist
   def ensure_wishlist
-    WishList.find_or_create_by(self.wishlist)
+    WishList.find_or_create_by(self.wish_list)
   end
 
   ## Confirmable
