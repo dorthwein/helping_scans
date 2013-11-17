@@ -2,23 +2,28 @@
 
 	<div clas="span12">
 
-		<div class="row-fluid">
-			<div class="span12 well text-center">
-				<h1> <%= @profile.name %> </h1>
-			</div>
-		</div>
+
 		<div class="row-fluid">
 			<div class="span12">
 				<%= link_to 'Donate', profile_donations_path(@profile), :class => 'btn btn-primary', style: 'width:100%; padding:10px 0;' %>				
 			</div>
 		</div>
+
 		<br />
 
 		<div class="row-fluid">
-			<div class="span12 well ">				
+			<div class="span12 well ">
+
 				<%= image_tag @profile.pict_url, id: 'profile_photo' %> 	
 			</div>
 		</div>
+
+
+		<div class="row-fluid">
+			<div class="span12 well text-center">
+				<h4> <%= @profile.name %> </h4>
+			</div>
+		</div>		
 
 
 		<div class="row-fluid">
