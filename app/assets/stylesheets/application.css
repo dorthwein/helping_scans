@@ -35,7 +35,7 @@ body {
 }
 #background-div {
 	background-size: 100%;
-	background: url('Homeless-hug_1024_blur.jpg') no-repeat;
+	background: no-repeat;
 	background-size: 100%;
 	top:40px;
 	min-width: 320px; 
