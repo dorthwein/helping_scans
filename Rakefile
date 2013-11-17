@@ -15,6 +15,16 @@ After the conflict I had very little assets to my name and no formal education. 
 'My name is Tammy and I have been addicted to crack since I was 14 years old. I ran away from my abusive family when I was 17. I lived at my dealers house for a while, but was arrested and went to prison for 5 years. I wanted to turn my life around but no one would hire a felon. Eventually I went back to my old ways and started using again. I am now 42 and live on the streets of st louis. Thanks to donators like you I have been seeing a substance abuse counselor and been clean for 5 months.',
 'Greetings! I am Francis. I have been homeless since I lost my wife and house from hurricane Katrina. I moved north in search of work but still struggle to live day to day. Please donate. Any amount will help and I am currently saving for a winter coat.',]
 
+
+	user_photos = [
+		'http://cdn.breitbart.com/mediaserver/Breitbart/Big-Government/2013/06/04/WashingtonStateHomelessAP.jpg',
+		'http://1.bp.blogspot.com/-o-HJgJ0yxKM/TzTct-YXTeI/AAAAAAAACew/X9RsypS3YMM/s1600/homeless.jpg',
+		'http://equityblog.org/wp-content/uploads/2010/09/new-orleans-flag-wrapped-women-post-katrina.jpeg',
+		'http://mnpprodpublic.s3.amazonaws.com/wp-content/uploads/2013/04/poverty-in-america-sign-crop-16x9.jpg',
+		'http://farm5.staticflickr.com/4045/4219546653_3634c79aa4_z.jpg',
+		'http://farm4.staticflickr.com/3159/2556774661_ee33582786_t.jpg',
+		'http://farm4.staticflickr.com/3500/4058479700_330e980407_n.jpg',
+	]
 	Wish.all.delete_all
 
 	users = User.all
@@ -25,13 +35,14 @@ After the conflict I had very little assets to my name and no formal education. 
 		x.update_attributes(			
 			bio: bios.sample,
 			name: names.sample,			
+			pict_url: user_photos.sample,
 		)
 
 		10.times do |y|
 			Wish.create(
 				wish_list: x.wish_list,
 				retail_item: RetailItem.all.sample
-			)
+			)			
 		end
 	end
 end
@@ -51,8 +62,6 @@ task :load_items => :environment do
   			category: row[4] ,
   			url: row[5] ,
 		)
-
-
 
 	end
 end

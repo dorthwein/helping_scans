@@ -22,8 +22,20 @@
 
 }
 
-#profile_image {
+.profile_image {
 	width:100%;
-	min-height:200px;
-	background:#000;
+}
+
+.profile_image img {
+	width:100%;
+	border-radius: 5px;
+}
+
+.well { 
+	padding: 10px;
+}
+h4 {
+	margin:0 0 5px 0 ;
+	padding: 0px;
+	
 }
