@@ -12,3 +12,16 @@
  *= require bootstrap_and_overrides
  *= require_tree .
  */
+ footer {
+ 	position: absolute;
+ 	width: 100%;
+ 	bottom: 0px;
+ }
+
+ 
+body {
+	background: url('homeless_man.jpg') no-repeat;
+	background-size: 100%;
+	min-width: 320px; 
+    min-height: 480px;
+}
