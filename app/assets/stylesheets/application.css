@@ -23,18 +23,12 @@ body {
 
 
 /*	background: url('homeless_man.jpg') no-repeat; */
-	position: relative;
 	background: url('Homeless-hug_1024_blur.jpg') no-repeat; 
 	background-size: 100%;
 	min-width: 320px; 
+
     min-height: 480px;
 
-}
-#navthingy {
-	position:fixed;
-	z-index: 3;
-	top:0;
-	width:100%;
 }
 
 #background-div {
