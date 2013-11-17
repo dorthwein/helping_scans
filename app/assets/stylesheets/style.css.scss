@@ -18,13 +18,23 @@ p {
 	max-width:860px;
 	width:100%;
 	margin: auto;
-	padding:10px;
+	padding:5px;
 	border: 2px solid #000;
 	background: rgba(0, 0, 0, 0.8);
-	border-radius: 15px;
-	z-index: 2;
+
 }
- 
+.well {
+
+}
+ #row-container {
+ 	max-width: 860px;
+ 	margin: auto;
+ 	position: relative;
+ 	z-index: 3;
+	
+	
+
+ }
 .profile_image {
 	width:100%;
 	border-radius: 5px;
