@@ -10,16 +10,15 @@
 #container {
 	max-width:1024px;
 	margin:auto;
+
 }
 
 
 #container {
 	padding:10px;
-	border: 1px solid #CCC;
-	background: rgba(255, 255, 255, 0.4);
+	border: 2px solid #000;
+	background: rgba(0, 0, 0, 0.8);
 	border-radius: 15px;
-
-
 }
 
 .profile_image {
@@ -33,9 +32,15 @@
 
 .well { 
 	padding: 10px;
+	background: #fff;
 }
 h4 {
 	margin:0 0 5px 0 ;
 	padding: 0px;
 
+}
+hr {
+	border-bottom:1px solid #333;
+	margin: 0;
+	padding: 0;
 }
