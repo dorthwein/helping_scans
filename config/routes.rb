@@ -13,13 +13,13 @@ HelpingScans::Application.routes.draw do
     end
 
   end
-<<<<<<< HEAD
+
   resoureces :about do 
   end
 
-=======
+
   
->>>>>>> 5cc64f2ee4334fd923a69f8c36220722830fdbe7
+
   resources :store do
   end
 
