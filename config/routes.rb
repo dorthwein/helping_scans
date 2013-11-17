@@ -14,7 +14,7 @@ HelpingScans::Application.routes.draw do
 
   end
 
-  resoureces :about do 
+  resources :abouts do 
   end
 
 
