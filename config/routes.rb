@@ -4,7 +4,7 @@ HelpingScans::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root 'profiles#index'
   resources :profiles do
     member do 
       get 'products'
@@ -16,9 +16,6 @@ HelpingScans::Application.routes.draw do
 
   resources :abouts do 
   end
-
-
-  
 
   resources :store do
   end
