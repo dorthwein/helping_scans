@@ -1,4 +1,3 @@
-
 <div class="row-fluid">	
 	<% i = 0 %>
 	<% @profiles.each do |profile| %>
@@ -6,19 +5,17 @@
 		<div class="span3 text-left">	
 			<div class="well">
 				<a href="<%= profile_path(profile) %>">
-					<div class="profile_image" style="background">
-						<%= image_tag profile.pict_url %>				
-					</div>
-					
+					<div class="profile_image" style="background-image:url('<%= profile.pict_url %>')">
+						
+					</div>					
 					<h4> <%= profile.name %> </h4>
 				</a>
 				<hr> 
-				<p> 
+				<p>
 					<%= profile.bio[0..200] %> 
-					<br />
-					<%= link_to('Learn more about ' + profile.name + '...', profile_path(profile)) %> 
+					<br /> 
+					<%= link_to('Learn more...') %> 
 				</p>
-				
 			</div>
 		</div>
 		<% if i == 4 %>

@@ -34,7 +34,7 @@ After the conflict I had very little assets to my name and no formal education. 
 
 		x.update_attributes(			
 			bio: bios.sample,
-			name: first_names.sample + ' ' + last_names.sample,
+			name: first_names.sample.titleize + ' ' + last_names.sample.titleize,
 			pict_url: user_photos.sample,
 		)
 
