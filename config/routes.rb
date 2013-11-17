@@ -14,10 +14,6 @@ HelpingScans::Application.routes.draw do
 
   end
   
-<<<<<<< Updated upstream
-  
-=======
->>>>>>> Stashed changes
   resources :store do
   end
 
