@@ -1,12 +1,12 @@
 <div class="row-fluid">	
 	<% @profiles.each do |profile| %>
-		<div class="span3 well text-center">	
-			<div class="profile_image">
+		<div class="span3 well text-left">	
+			<div class="profile_image" style="background">
 				<%= image_tag profile.pict_url %>				
 			</div>
-			<h4> <%= profile.name %> </h4>
+			<h4> <%= link_to(profile.name, profile_path(profile)) %> </h4>
 			<hr> 
-			<p> <%= profile.bio %> </p>
+			<p> <%= profile.bio[0..200] %> </p>
 		</div>
 	<% end %> 
 </div>

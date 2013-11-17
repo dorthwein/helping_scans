@@ -25,6 +25,7 @@ After the conflict I had very little assets to my name and no formal education. 
 		'http://farm4.staticflickr.com/3159/2556774661_ee33582786_t.jpg',
 		'http://farm4.staticflickr.com/3500/4058479700_330e980407_n.jpg',
 	]
+
 	Wish.all.delete_all
 
 	users = User.all
