@@ -1,7 +1,13 @@
+
+
 <div class="row-fluid">	
 	<% @profiles.each do |profile| %>
 		<div class="span6">	
-			<%= link_to profile.email, profile_path(profile) %>
+			<div class="profile_image">
+				<%= link_to profile.email, profile_path(profile) %>
+			</div>
 		</div>
 	<% end %> 
 </div>
+
+

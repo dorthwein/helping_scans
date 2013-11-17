@@ -9,13 +9,16 @@ HelpingScans::Application.routes.draw do
     member do 
       get 'products'
     end
+    resources :donations do
+    end
+
   end
   
 
   resources :about do
   end
-
   
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

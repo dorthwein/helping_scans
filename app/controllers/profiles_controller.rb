@@ -7,7 +7,6 @@ class ProfilesController < ApplicationController
   	end
   end
   def show
-
   	@profile = User.find(params[:id])
   end
 end
