@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/heroku/rails_log_stdout.git
+  revision: 01b5bcc572e3baed1618f4068920dd83bd491fb2
+  specs:
+    rails_log_stdout (0.0.1)
+
+GIT
   remote: https://github.com/mongoid/mongoid.git
   revision: ad9000a7e5b099c957a6e6a9b1758e0461148f8e
   specs:
@@ -162,6 +168,7 @@ DEPENDENCIES
   less-rails
   mongoid!
   rails (= 4.0.1)
+  rails_log_stdout!
   sass-rails
   sdoc
   therubyracer

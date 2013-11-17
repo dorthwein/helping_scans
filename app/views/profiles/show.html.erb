@@ -30,24 +30,7 @@
 			</div>
 		</div>
 
-		<% @profile.wish_list.wishes.limit(10).each do |x| %>
-		<div class="row-fluid" style="padding:5px; border-top:1px solid #CCC;">
-			<div class="span8">
-				<h5 style="width:100%;"> <%= x.retail_item.name %> </h5>
-			</div>
-			
-			<div class="span4">
-				<%= link_to 'Give This', '#', :class => 'btn btn-success' %>
-			</div>			
-		</div>
-		<% end %>
 
-
-		<div class="row-fluid">
-			<div class="span12">
-				<%= link_to 'Donate', '#', :class => 'btn btn-primary', style: 'width:100%; padding:10px 0;' %>
-			</div>
-		</div>
 	</div>
 </div>
 
