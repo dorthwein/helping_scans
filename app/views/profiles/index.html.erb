@@ -2,19 +2,20 @@
 	<% i = 0 %>
 	<% @profiles.each do |profile| %>
 		<% i = i + 1 %>
-		<div class="span3 well text-left">	
-			<div class="profile_image" style="background">
-				<%= image_tag profile.pict_url %>				
+		<div class="span3 text-left">	
+			<div class="well">
+				<div class="profile_image" style="background">
+					<%= image_tag profile.pict_url %>				
+				</div>
+				<h4> <%= link_to(profile.name, profile_path(profile)) %> </h4>
+				<hr> 
+				<p> 
+					<%= profile.bio[0..200] %> 
+					<br />
+					<%= link_to('Learn more about ' + profile.name + '...', profile_path(profile)) %> 
+				</p>
 			</div>
-			<h4> <%= link_to(profile.name, profile_path(profile)) %> </h4>
-			<hr> 
-			<p> 
-				<%= profile.bio[0..200] %> 
-				<br />
-				<%= link_to('Learn more about ' + profile.name + '...', profile_path(profile)) %> 
-			</p>
 		</div>
-		
 		<% if i == 4 %>
 			<%= i = 0 %> 
 			</div>

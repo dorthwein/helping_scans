@@ -69,22 +69,9 @@
     </div>
 
 
-    <div  class="container-fluid" style="height:100%;">
-      <div class="row-fluid" style="height:100%;">
-<!--
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
-            </ul>
-          </div>
-        </div>
--->
 
-        <div id="" class="span12" style="">
+      <div class="row-fluid" style="padding:0">
+        <div class="span12" style="padding:0">
           <%= bootstrap_flash %>
           <div id="container">
             <%= yield %>
@@ -92,7 +79,7 @@
         </div>
       </div><!--/row-->
 
-    </div> <!-- /container -->
+
 
   </body>
 </html>

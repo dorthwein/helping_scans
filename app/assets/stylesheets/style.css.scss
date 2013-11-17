@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+body, html, form {
+	padding:0;
+}
 #profile_photo {
 	width:100%;
 
@@ -10,10 +12,7 @@
 #container {
 	max-width:1024px;
 	margin:auto;
-
-}
-
-#container {
+	padding:0px;
 	padding:10px;
 	border: 2px solid #000;
 	background: rgba(0, 0, 0, 0.8);
