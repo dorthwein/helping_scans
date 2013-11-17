@@ -1,5 +1,4 @@
 class ProfilesController < ApplicationController
-
   def index
   	@profiles = User.all
   	respond_to do |format|      
